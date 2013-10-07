@@ -1,0 +1,89 @@
+bundle
+
+Word or command	Definition
+<a> tag	Anchor HTML tag marks the text that will become a link
+attribute	a name-value pair inside an opening HTML tag.  For example, <a href="/page2"> has an href attribute
+Bash	Bourne-Again SHell, the shell that comes with Mac OS X and Linux
+<b> tag	HTML tag for making text bold
+block-level tag	an HTML tag that can have a fixed width, and takes up a line by itself
+<br> tag	line break HTML tag: goes to the beginning of the next line
+Bootstrap	a popular CSS library created by Twitter developers
+browser	abbreviation for "web browser"
+bundle	command-line command to ask Bundler to install gems listed in the Gemfile
+Bundler	command-line program to install Ruby gems
+<button> tag	HTML tag that makes a clickable button to take action on a form
+cd	the shell command to change current working directory
+clone	to duplicate a Git repo to make another Git repo, usually making a local Git repo from a repo on GitHub
+commit	to permanently record a group of file additions, modifications, and deletions into a repo's history
+CSS	Cascading Style Sheets, a language for attaching visual formatting to HTML
+dev	abbreviation for either "developer" or the "development" environment (as opposed to "production")
+developer	abbreviation for "software developer" or "web developer"
+directory	a named way to group files in a file system, also called folders
+.. ("dot dot")	Containing ("parent") directory
+dynamic	a file that contains Ruby code, so it will change when interpreted by a web server; opposite of static
+ERb	Embedded RuBy, a language formed by mixing Ruby and HTML
+file system	the hierarchical structure of directories and files stored on a hard drive or removable media
+Finder	Mac program to view or manipulate directories and files, has a smiling face icon
+form	part of a web site that allows users to enter data in text boxes or to click buttons
+fork	a Git clone that someone creates to let them change someone else's work independently of them
+framework	library that handles mundane details so you can write code that is more abstract
+gem	a Ruby library packaged to make it easy to transfer over the internet
+Gemfile	list of gems needed for Ruby code in this directory, sometimes with specific version requirements
+Gemfile.lock	automatically created list of exactly which versions of gems were installed by Bundler, so other developers can repeat your setup
+Git	command-line program for version control (backing up and exchanging code with other developers)
+GitHub	web app that acts as a centralized backup and exchange point for Git code
+GitX	Mac program to view and commit to a Git repository
+<h1> tag	Header level #1 HTML tag (the biggest)
+<h2> tag	Header level #2 HTML tag (the second biggest, for subcategories)
+helper	a Ruby method you can call to generate HTML for convenience, instead of writing the HTML yourself
+home directory	Directory containing directories that are specific to you on a multi-user computer
+host	a host (or "hosting provider") runs a web server that serves your web app to the public Internet from a particular domain name
+HTML	HyperText Markup Language, a way to attach semantic structure and visual formatting to plain text
+HTTP	HyperText Transfer Protocol, a language for web browsers to make requests to web servers, and for servers to respond with HTML
+inline tag	an HTML tag that flows from left to right with what comes before and after it
+<input> tag	HTML tag for accepting user input with a text field, password field, radio button, or checkbox
+JavaScript	programming language used in web browsers for flexible responsive user interfaces
+<label> tag	HTML tag for styling the label of a form element; has no default style
+<li> tag	List Item HTML tag
+library	collection of reusable programming code
+local	located on the computer you're currently using; opposite of remote
+localhost	hostname referring to the computer you're using
+ls (lowercase LS)	the shell command to list all files in the current working directory
+markup	simple language for indicating where certain visual styles begin and end, for example "a word in <b>bold</b>"
+master	the default branch of a Git repo
+merge	to mix together two commits that were done independently
+merge conflict	situation when two commits have overlapping changes that disagree and can't be automatically merged
+method	a group of Ruby statements that can be invoked ("called") by name
+MVC	Model-View-Controller, a principle for keeping different parts of a web app separate
+origin	The URL for the Git repo that this Git repo was cloned from.  A local repo's origin is usually a repo on GitHub.
+<p> tag	paragraph HTML tag, separates some text usually with some margin above and below
+prompt	Short sequence of characters that shows a command-line program is ready to accept your typed input
+pull	to copy over and merge some Git commits from a remote Git repo (usually GitHub) to your local Git repo
+push	to copy over some Git commits from your local Git repo to a remote Git repo (usually GitHub)
+rackup	command-line command to start a web server
+Rails	abbreviation for "Ruby on Rails"
+remote	located on another computer that you need a network connection to get to; opposite of local
+repo	abbreviation for "repository"
+repository	collection of programming code and all its history in a particular version control system
+root	the outermost directory or route, indicated by a single slash (/)
+Ruby	a programming language that trades speed for greater programmer productivity, similar to Python
+Ruby on Rails	a framework written in Ruby, for writing web applications also in Ruby
+shell	a text-only program that accepts commands to launch programs and shows you their output
+Sinatra	another Ruby web framework like Rails but simpler, considered better for smaller web apps
+staging area	group of added/deleted/changed files that you've indicated you're going to commit soon
+static	a file that contains only HTML or CSS or JavaScript, but no Ruby code, so it won't change when served by a web server; opposite of dynamic
+syntax	rules of grammar, punctuation, and whitespace for a programming language
+<table> tag	an HTML tag for drawing a grid that stretches around whatever is inside it
+tag	markup to indicate the beginning or ending of a visual format - for example <b> and </b>
+Terminal	Mac program for running shell commands
+<td> tag	Table Data HTML tag, indicates that you're stepping one cell (grid square) to the right on the same row
+text	sequence of characters (letters, numbers, symbols, etc.) without any styles (bold, italic, etc.)
+<textarea> tag	a multi-line text field for users to enter input
+TextWrangler	a free text editor for Mac
+<th> tag	Table Header HTML tag, like <td> but with a different visual appearance to show it's a label
+<tr> tag	Table Row HTML tag, marks the beginning of a new horizontal part of an HTML table
+<ul> tag	Unordered List HTML tag, has bulleted lines of text
+upstream	The URL for the Git repo that this repo's origin was forked from.  Generally a way to merge in someone else's work.
+view	parts of a web application that the user directly sees and interacts with, separated from the models and controllers
+web browser	a program that makes HTTP requests to web servers and renders their HTML responses
+web server	a program that listens for HTTP requests and responds with HTML (also over HTTP)
