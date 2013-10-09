@@ -1,4 +1,27 @@
 Some project ideas:
-- 
-- 
-- 
+
+#Obviously, I have put the most effort into the TutorTrade option and that is what I'd like to do. I did list two additional ideas just in case.
+
+TutorTrade
+
+"A web-based exchange that helps students coordinate both giving and receiving tutoring time."
+
+	-bank hours = give 1 hour, get 1 hour
+	-tutor in a subject of your choice
+	-rate quality of tutors
+
+		>eventually, I'd like to open it up to all people...not just students and universities (trade 1 hour Ruby tutoring for 1 hour Guitar Lesson)
+	
+__________________________________
+
+Charity Project
+-match people with charities they would like to help
+-let people post the charities they are working with
+
+__________________________________
+
+Food Bank
+-restuarants post food that will go bad
+-people can donate food
+-people can find food
+
