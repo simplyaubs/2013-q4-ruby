@@ -1,3 +1,17 @@
 <h1>Cycling dictionary</h1>
 
-<!-- TODO: fill this out -->
+<table>
+
+	<% Term.order(:id).each do |term| %>
+
+	<ul>
+		<li>
+			<b><%= term.term %></b>
+			<i> (<%= term.part_of_speech %>)</i>
+			<p><%= term.definition %></p>
+		</li>
+	</ul>
+
+	<% end %>
+</table>
+	
