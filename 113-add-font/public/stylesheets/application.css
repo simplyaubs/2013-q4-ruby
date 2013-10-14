@@ -6,6 +6,13 @@ body {
   background-color: white;
   border: 3px #ccc solid;
   padding: 30px;
-  font-family: sans-serif;
+  font-family: "Walter Turncoat";
   font-size: 16pt;
+}
+@font-face {
+	font-family: "Walter Turncoat";
+	src: url("/fonts/WalterTurncoat.ttf");
+}
+h1 {
+	font-family: "Walter Turncoat";
 }
