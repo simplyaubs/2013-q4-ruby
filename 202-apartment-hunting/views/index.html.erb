@@ -1,6 +1,6 @@
 <h1>Apartments</h1>
 
-<table border="1">
+<table border="1" cellpadding="5">
 	<tr>
 		<th>ID</th>
 		<th>Address</th>
@@ -14,7 +14,7 @@
 	<tr>
 		<td><%= apartment.id %></td>
 		<td><%= apartment.address %></td>
-		<td><%= apartment.rent_per_month %></td>
+		<td>$<%= apartment.rent_per_month %>.00</td>
 		<td><%= apartment.does_allow_pets %></td>
 		<td><a href="<%= apartment.url %>">Go to ad on Craigslist</a></td>
 	</tr>
