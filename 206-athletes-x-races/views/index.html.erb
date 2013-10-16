@@ -10,9 +10,10 @@
 	<% Runner.order(:id).each do |runner| %>
 		<tr>
 			<th><%= runner.name %></th>
-			<td> ______:__ </td>
-			<td> ______:__ </td>
-			<td> ______:__ </td>
+		
+		<% Race.order(:name).each do |race| %>
+			<td>_______:___</td>
+			<% end %>
 		</tr>
 		<% end %>
 </table>
