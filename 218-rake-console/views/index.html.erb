@@ -18,6 +18,13 @@
       <a href="/cities/<%= c.id %>">
         <%= c.name %>
       </a>
+      (<%= c.population_in_millions %> million people)  
     </li>
   <% end %>
 </ul>
+
+<p>
+  <a href="/population_double">
+    Double population of Paris!
+  </a>
+</p>
