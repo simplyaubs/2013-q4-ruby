@@ -10,7 +10,7 @@ get "/new_president" do
   halt erb(:edit)
 end
 
-# TODO: write POST handler to create president
+
 
 get "/presidents/:id" do
   id = params["id"]
