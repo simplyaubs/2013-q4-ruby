@@ -10,7 +10,16 @@ get "/new_language" do
   halt erb(:edit)
 end
 
-# TODO: write a POST handler to create a language
+post "new_language" do
+	@language 									 = Language.new
+	@language.name 							 = params["name"]
+	@language.num_speakers 			 = params["num_speakers"]
+	@language.language_family_id = params["language_family_id"]
+	@language.main_script 			 = params["main_script"]
+	@language.has_arabic_script  = ["has_arabic_script"]
+	@language.save!
+	redirect "/"
+end
 
 get "/languages/:id" do
   id         = params["id"]
@@ -18,4 +27,13 @@ get "/languages/:id" do
   halt erb(:edit)
 end
 
-# TODO: write a POST handler to update a language
+post "/languages/:id" do
+	id 													 = params["id"]
+	@language.name 							 = Language.find(id)
+	@language.num_speakers 			 = params["name"]
+	@language.language_family_id = params["language_family_id"]
+	@language.main_script 			 = params["main_script"]
+	@language.has_arabic_script  = ["has_arabic_script"]
+	@language.save!
+	redirect "/"
+end
