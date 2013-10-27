@@ -6,7 +6,7 @@ get "/" do
 end
 
 get "/lines/:id" do
-  id = params["id"]
+  id    = params["id"]
   @line = BraceletLine.find(id)
   halt erb(:edit)
 end
