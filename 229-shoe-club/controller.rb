@@ -19,11 +19,15 @@ post "/sign_up" do
 
   if params["commit"] == "Go back"
     redirect "/"
+
+  elsif params["commit"] == "Continue"
+    @customer.save
+    redirect  "/shipping"
+    
   end
 
-  # TODO: If Go Back was clicked, go back to the previous page
-  # TODO: If Continue was clicked, save the entered info and either go on
-  #       to next page, or show validation errors on this same page
+
+  # TODO: If Continue was clicked, failed to save then show validation errors on this same page 
 end
 
 get "/shipping" do
