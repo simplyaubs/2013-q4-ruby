@@ -19,15 +19,13 @@ post "/sign_up" do
 
   if params["commit"] == "Go back"
     redirect "/"
-
   elsif params["commit"] == "Continue"
-    @customer.save
-    redirect  "/shipping"
-    
+    if @customer.save
+      redirect  "/shipping"
+    else
+      halt erb(:sign_up)
+    end
   end
-
-
-  # TODO: If Continue was clicked, failed to save then show validation errors on this same page 
 end
 
 get "/shipping" do
