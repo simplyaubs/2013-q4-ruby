@@ -14,6 +14,12 @@ end
 
 post "/sign_up" do
   @customer = Customer.find(1)
+  @customer.first_name = params["first_name"]
+  @customer.last_name = params["last_name"]
+
+  if params["commit"] == "Go back"
+    redirect "/"
+  end
 
   # TODO: If Go Back was clicked, go back to the previous page
   # TODO: If Continue was clicked, save the entered info and either go on
