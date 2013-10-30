@@ -2,4 +2,38 @@
 
 <h1>Page 2 of 4: Shipping</h1>
 
-<!-- TODO: write this part to match the mockup -->
+<p>
+	<b>Choose shipping speed</b>
+	<br>
+	<%= radio_button_tag "ship_speed", "ground", @customer.ship_speed == "ship_speed" %>
+	<%= label_tag "ship_speed_ground",  "Ground" %>
+	<br>
+	<%= radio_button_tag "ship_speed", "next day", @customer.ship_speed == "ship_speed" %>
+	<%= label_tag "ship_speed_next_day", "Next Day" %>
+</p>
+
+<p>
+	<b>Enter shipping address</b>
+	<br>
+	<%= label_tag :ship_address1, "Address1" %>
+	<br>
+	<%= text_field_tag :ship_address1, @customer.ship_address1 %>
+	<br>
+	<%= label_tag :ship_city, "City" %>
+	<br>
+	<%= text_field_tag :ship_city, @customer.ship_city %>
+	<br>
+	<%= label_tag :ship_state, "State" %>
+	<br>
+	<%= select_tag :ship_state, 
+	options_for_select(["AR","AK","AL"], @customer.ship_state),
+	prompt: "Choose a state..." %>
+	<br>
+	<%= label_tag :ship_zip_code, "Zip code" %>
+	<br>
+	<%= text_field_tag :ship_zip_code, @customer.ship_zip_code %>
+	<br>
+	<%= submit_tag "Go back" %>
+	or
+	<%= submit_tag "Continue" %>
+</p>
