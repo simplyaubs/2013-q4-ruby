@@ -14,12 +14,12 @@ end
 
 post "/sign_up" do
   @customer = Customer.find(1)
-  @customer.first_name = params["first_name"]
-  @customer.last_name = params["last_name"]
 
   if params["commit"] == "Go back"
     redirect "/"
   elsif params["commit"] == "Continue"
+    @customer.first_name = params["first_name"]
+    @customer.last_name = params["last_name"]
     if @customer.save
       redirect  "/shipping"
     else
