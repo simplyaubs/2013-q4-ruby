@@ -18,9 +18,9 @@
 	<br>
 	<%= label_tag :bill_state, "State" %>
 	<br>
-	<%= select_tag :bill_state, 
-	options_for_select(["AR","AK","AL"], @customer.bill_state),
-	prompt: "Choose a state" %>
+	<%= select_tag "state", options_from_collection_for_select(
+      @u_s_states, :abbreviation, :name, @customer.bill_state),
+    prompt: "" %>
 	<br>
 	<%= label_tag :bill_zip_code, "Zip code" %>
 	<br>
