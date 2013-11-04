@@ -5,8 +5,8 @@
 <p>
 	<b>Enter billing address</b>
 	<br>
-	<%= check_box_tag :bill_address_same_as_ship, "on", @customer.bill_address_same_as_ship %>
-	<%= label_tag :bill_address_same_as_ship, "Same as shipping address" %>
+	<%= check_box_tag "same_as_ship", "on", @customer.bill_address_same_as_ship %>
+		Same as shipping address
 	<br>
 	<%= label_tag :bill_address1, "Address1" %>
 	<br>
