@@ -24,9 +24,9 @@ post "/sign_up" do
       redirect  "/shipping"
     else
       halt erb(:sign_up)
-    end
-  end
-end
+    end # end inner if
+  end # end outer if
+end # end post
 
 get "/shipping" do
   @customer = Customer.find(1)
